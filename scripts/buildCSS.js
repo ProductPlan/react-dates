@@ -27,5 +27,5 @@ const format = new CleanCSS({
 });
 const { styles: formattedCSS } = format.minify(CSS);
 
-const outputFilePath = optimizeForProduction ? './lib/css/_datepicker.css' : './css/styles.css';
+const outputFilePath = optimizeForProduction ? './lib/css/_datepicker.scss' : './css/styles.css';
 fs.writeFileSync(outputFilePath, formattedCSS, 'utf8');
